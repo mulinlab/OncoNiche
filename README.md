@@ -10,14 +10,15 @@ There are three required input files:
 Using skin cancer data as an example, we create a working directory with the structure outlined below and place the uKIN input data files within it.
 ```
 work_dir          
-└─uKIN_pipeline
-   └─Global_Gini_CGC_driver
-      ├─background_network
-      │      Nested Systems in Tumors network.tsv    # background network file
-      │      
-      └─Skin_global_Gini
-              tissue_specific_genes.txt    # a file of tissue specific genes	
-              prior_knowledge.txt	# a prior knowledge file
+└─OncoNiche_pipeline          
+   └─uKIN_pipeline
+      └─Global_Gini_CGC_driver
+         ├─background_network
+         │      Nested Systems in Tumors network.tsv    # background network file
+         │      
+         └─Skin_global_Gini
+                 tissue_specific_genes.txt    # a file of tissue specific genes	
+                 prior_knowledge.txt	# a prior knowledge file
 ```
 ### 2. Output
 output_tissue_specific_genes_results.txt is written in the uKIN/output directory. The file contains a list of candidate genes ranked by how frequently they are visited as the guided walks reach the stationary distribution.
@@ -35,18 +36,19 @@ There are three required input files:
  3) a list file of tissue-specific mutated and expressed genes
 Using skin cancer data as an example, we create a working directory with the structure outlined below and place the simulated annealing input data files within it.
 ```
-work_dir  
-└─uKIN_pipeline
-    ├─Global_Gini_CGC_driver
-    │  ├─background_network
-    │  │      Nested Systems in Tumors network.tsv    # background network file
-    │  │      
-    │  └─Skin_global_Gini
-    │          tissue_exp_score    # a list of tissue-specific expressed genes
-    │          tissue_mut_score    # a list of tissue-specific mutated genes
-    └─output
-        └─uKIN_seed_SIA_CGC_Skin
-                output_tissue_specific_mutated genes_results.txt    # a list of candidate genes ranked by visit frequencies
+work_dir          
+└─OncoNiche_pipeline
+   └─uKIN_pipeline
+       ├─Global_Gini_CGC_driver
+       │  ├─background_network
+       │  │      Nested Systems in Tumors network.tsv    # background network file
+       │  │      
+       │  └─Skin_global_Gini
+       │          tissue_exp_score    # a list of tissue-specific expressed genes
+       │          tissue_mut_score    # a list of tissue-specific mutated genes
+       └─output
+           └─uKIN_seed_SIA_CGC_Skin
+                   output_tissue_specific_mutated genes_results.txt    # a list of candidate genes ranked by visit frequencies
 ```
 ### 2. Output
 ### 3. How to run
