@@ -20,6 +20,7 @@ work_dir
               prior_knowledge.txt	# a prior knowledge file
 ```
 ### 2. Output
+output_tissue_specific_genes_results.txt is written in the uKIN/output directory. The file contains a list of candidate genes ranked by how frequently they are visited as the guided walks reach the stationary distribution.
 ### 3. How to run
 
 ## Simulated annealing
