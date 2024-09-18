@@ -6,14 +6,17 @@ There are three required input files:
 1) a background network file 
 2) a prior knowledge file containing a list of cancer driver genes, tissue-specific mutated and expressed genes
 3) a file of tissue-specific mutated genes, each weighted by the Gini index.
+Using skin cancer data as an example, we create a working directory with the structure outlined below and place the uKIN input data files within it.
 ```
-├─Global_Gini_CGC_driver
-│  ├─background_network
-│  │      Nested Systems in Tumors network.tsv
-│  │      
-│  └─Skin_global_Gini
-│          Tissue-specific_genes.txt
-│          prior_knowledge.txt
+work_dir          
+└─uKIN_pipeline
+   └─Global_Gini_CGC_driver
+      ├─background_network
+      │      Nested Systems in Tumors network.tsv    # background network file
+      │      
+      └─Skin_global_Gini
+              tissue_specific_genes.txt    # a file of tissue specific genes	
+              prior_knowledge.txt	# a prior knowledge file
 ```
 ### 2. Output
 ### 3. How to run
