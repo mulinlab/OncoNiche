@@ -29,5 +29,24 @@ python uKIN_pipeline.py --tissue tissue_type
 In uKIN_pipeline/output folder, you can find the uKIN_seed_SIA_CGC_tissue folder, which contains the candidate genes and visit frequencies associated with all tissue-specific mutated genes for the input tissue type.
 ## Simulated annealing
 ### 1. Input
+There are three required input files:
+ 1) a background network file 
+ 2) a gene visit frequency file output from uKIN
+ 3) a list file of tissue-specific mutated and expressed genes
+Using skin cancer data as an example, we create a working directory with the structure outlined below and place the simulated annealing input data files within it.
+```
+work_dir  
+└─uKIN_pipeline
+    ├─Global_Gini_CGC_driver
+    │  ├─background_network
+    │  │      Nested Systems in Tumors network.tsv    # background network file
+    │  │      
+    │  └─Skin_global_Gini
+    │          tissue_exp_score    # a list of tissue-specific expressed genes
+    │          tissue_mut_score    # a list of tissue-specific mutated genes
+    └─output
+        └─uKIN_seed_SIA_CGC_Skin
+                output_tissue_specific_mutated genes_results.txt    # a list of candidate genes ranked by visit frequencies
+```
 ### 2. Output
 ### 3. How to run
