@@ -22,7 +22,9 @@ work_dir
 ### 2. Output
 output_tissue_specific_genes_results.txt is written in the uKIN/output directory. The file contains a list of candidate genes ranked by how frequently they are visited as the guided walks reach the stationary distribution.
 ### 3. How to run
-
+```
+python uKIN_pipeline.py tissue_type
+```
 ## Simulated annealing
 ### 1. Input
 ### 2. Output
