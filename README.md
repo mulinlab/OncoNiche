@@ -22,9 +22,12 @@ work_dir
 ### 2. Output
 output_tissue_specific_genes_results.txt is written in the uKIN/output directory. The file contains a list of candidate genes ranked by how frequently they are visited as the guided walks reach the stationary distribution.
 ### 3. How to run
+Run command:
 ```
 python uKIN_pipeline.py --tissue tissue_type
 ```
+In uKIN_pipeline/output folder, you can find the uKIN_seed_SIA_CGC_tissue folder, which contains the candidate genes and visit frequencies associated with all tissue-specific mutated genes for the input tissue type.
+LoopAnchor.LoopAnchor files is arranged in bedpe format and the last column is the predicted loop intensity.
 ## Simulated annealing
 ### 1. Input
 ### 2. Output
