@@ -6,6 +6,7 @@ There are three required input files:
 1) a background network file 
 2) a prior knowledge file containing a list of cancer driver genes, tissue-specific mutated and expressed genes
 3) a file of tissue-specific mutated genes, each weighted by the Gini index.
+
 Using skin cancer data as an example, we create a working directory with the structure outlined below and place the uKIN input data files within it.
 ```
 work_dir          
