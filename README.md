@@ -27,7 +27,6 @@ Run command:
 python uKIN_pipeline.py --tissue tissue_type
 ```
 In uKIN_pipeline/output folder, you can find the uKIN_seed_SIA_CGC_tissue folder, which contains the candidate genes and visit frequencies associated with all tissue-specific mutated genes for the input tissue type.
-LoopAnchor.LoopAnchor files is arranged in bedpe format and the last column is the predicted loop intensity.
 ## Simulated annealing
 ### 1. Input
 ### 2. Output
