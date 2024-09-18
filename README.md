@@ -6,7 +6,15 @@ There are three required input files:
 1) a background network file 
 2) a prior knowledge file containing a list of cancer driver genes, tissue-specific mutated and expressed genes
 3) a file of tissue-specific mutated genes, each weighted by the Gini index.
-
+```
+├─Global_Gini_CGC_driver
+│  ├─background_network
+│  │      Nested Systems in Tumors network.tsv
+│  │      
+│  └─Skin_global_Gini
+│          Tissue-specific_genes.txt
+│          prior_knowledge.txt
+```
 ### 2. Output
 ### 3. How to run
 
