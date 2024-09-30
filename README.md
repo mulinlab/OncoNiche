@@ -60,13 +60,14 @@ The file "final_subnetwork_output_tissue_gene.txt" contains the genes of subnetw
 The file "subnetwork_stas_curr_all_tissue_gene.txt" contains the parameter data calculated by the model for each iteration, organized as follows.
 | Times  | Conductance score | Conductance score difference | Probability | Random number | Temperature | P value | Number of subnetwork members | Rotation decision |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-
+'''
 work_dir          
 └─OncoNiche_pipeline
    └─OncoNiche_output
        └─Skin
-             Skin BRAF subnetwork member genes.txt
-             Skin BRAF subnetwork argument.txt
+             Skin BRAF subnetwork member genes.txt  # the genes of subnetwork members for each iteration
+             Skin BRAF subnetwork argument.txt  # the parameter data calculated by the model for each iteration
+'''
 ### 3. How to run
 Run command:
 ```
