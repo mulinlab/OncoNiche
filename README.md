@@ -51,6 +51,6 @@ work_dir
                    output_tissue_specific_mutated genes_results.txt    # a list of candidate genes ranked by visit frequencies
 ```
 ### 2. Output
-|Tissue-specific mutated genes|Subnetwork member genes|Times|
+| Tissue-specific mutated genes | Subnetwork member genes | Times |
 
 ### 3. How to run
