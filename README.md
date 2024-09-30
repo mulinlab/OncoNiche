@@ -8,6 +8,7 @@ There are three required input files:
 3) a file of tissue-specific mutated genes, each weighted by the Gini index.
 
 Using skin cancer data as an example, we create a working directory with the structure outlined below and place the uKIN input data files within it.
+
 ```
 work_dir          
 └─OncoNiche_pipeline          
@@ -20,6 +21,7 @@ work_dir
                  tissue_specific_genes.txt    # a file of tissue specific genes	
                  prior_knowledge.txt	# a prior knowledge file
 ```
+
 ### 2. Output
 output_tissue_specific_genes_results.txt is written in the uKIN/output directory. The file contains a list of candidate genes ranked by how frequently they are visited as the guided walks reach the stationary distribution.
 ### 3. How to run
