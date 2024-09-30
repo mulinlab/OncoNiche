@@ -64,7 +64,7 @@ The file "subnetwork_stas_curr_all_tissue_gene.txt" contains the parameter data 
 
 ### 3. How to run
 Run command:
-'''
+```
 python simulated_annealing_pipeline.py --tissue tissue_type --work_dir work_dir
-'''
+```
 In the OncoNiche_output/tissue directory, you can find the files "Tissue gene subnetwork member genes.txt" and "Tissue gene subnetwork argument.txt", which contain the subnetwork member genes and the parameter data calculated by the model during each iteration.
