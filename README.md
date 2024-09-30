@@ -55,6 +55,7 @@ The file “final_subnetwork_output_tissue_gene.txt” and “subnetwork_stas_cu
 The file "final_subnetwork_output_tissue_gene.txt" contains the genes of subnetwork members for each iteration, organized as follows.
 | Tissue-specific mutated genes  | Subnetwork member genes | Times |
 | ------------- | ------------- | ------------- |
+
 The file "subnetwork_stas_curr_all_tissue_gene.txt" contains the parameter data calculated by the model for each iteration, organized as follows.
 | First Header  | Second Header |
 | ------------- | ------------- |
