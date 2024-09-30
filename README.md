@@ -53,6 +53,4 @@ work_dir
 ### 2. Output
 | First Header  | Second Header |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
 ### 3. How to run
