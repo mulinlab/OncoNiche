@@ -52,6 +52,7 @@ work_dir
 ```
 ### 2. Output
 The file “final_subnetwork_output_tissue_gene.txt” and “subnetwork_stas_curr_all_tissue_gene.txt is” written in the OncoNiche_output/tissue directory. 
+
 The file "final_subnetwork_output_tissue_gene.txt" contains the genes of subnetwork members for each iteration, organized as follows.
 | Tissue-specific mutated genes  | Subnetwork member genes | Times |
 | ------------- | ------------- | ------------- |
