@@ -76,7 +76,7 @@ Run command:
 ```
 python simulated_annealing_pipeline.py --tissue tissue_type --work_dir work_dir
 ```
-In the OncoNiche_output/tissue directory, you can find the files "Tissue gene subnetwork member genes.txt" and "Tissue gene subnetwork argument.txt", which contain the subnetwork member genes and the parameter data calculated by the model during each iteration.
+In the OncoNiche_output/tissue directory, you can find the files "Tissue gene subnetwork member genes.txt", "Tissue gene subnetwork argument.txt" and "All_tissue_specific_subnetworks_in_tissue.txt", which contain the subnetwork member genes, the parameter data calculated by the model during each iteration and all tissue-specific subnetworks identified by OncoNiche in this tissue.
 # Copyright
 Copyright (c) Mulinlab@Tianjin Medical University 2021-2024.
 # Citation
