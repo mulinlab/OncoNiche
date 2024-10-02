@@ -68,8 +68,8 @@ work_dir
 └─OncoNiche_pipeline
    └─OncoNiche_output
        └─Skin
-             Skin BRAF subnetwork member genes.txt  # the genes of subnetwork members for each iteration
-             Skin BRAF subnetwork argument.txt  # the parameter data calculated by the model for each iteration
+             Skin_BRAF_subnetwork_member_genes.txt  # the genes of subnetwork members for each iteration
+             Skin_BRAF_subnetwork_argument.txt  # the parameter data calculated by the model for each iteration
 ```
 ### 3. How to run
 Run command:
