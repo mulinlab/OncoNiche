@@ -53,15 +53,20 @@ work_dir
                    output_tissue_specific_mutated genes_results.txt    # a list of candidate genes ranked by visit frequencies
 ```
 ### 2. Output
-The file “final_subnetwork_output_tissue_gene.txt” and “subnetwork_stas_curr_all_tissue_gene.txt is” written in the OncoNiche_output/tissue directory. 
+The file “Tissue_gene_subnetwork_member_genes.txt”, “Tissue_gene_subnetwork_argument.txt” and  "All_tissue_specific_subnetworks_in_tissue.txt" were written in the OncoNiche_output/tissue directory. 
 
-The file "final_subnetwork_output_tissue_gene.txt" contains the genes of subnetwork members for each iteration, organized as follows.
+
+The file "Tissue_gene_subnetwork_member_genes.txt" contains the genes of subnetwork members for each iteration, organized as follows.
 | Tissue-specific mutated genes  | Subnetwork member genes | Times |
 | ------------- | ------------- | ------------- |
 
-The file "subnetwork_stas_curr_all_tissue_gene.txt" contains the parameter data calculated by the model for each iteration, organized as follows.
+The file "Tissue_gene_subnetwork_argument.txt" contains the parameter data calculated by the model for each iteration, organized as follows.
 | Times  | Conductance score | Conductance score difference | Probability | Random number | Temperature | P value | Number of subnetwork members | Rotation decision |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+
+The file "All_tissue_specific_subnetworks_in_tissue.txt" contains all tissue-specific subnetworks identified by OncoNiche, organized as follows.
+| Subnetwork member genes  | Tissue-specific mutated genes | P value | Conductance score | Number of subnetwork members | Tissue |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 
 ```
 work_dir          
@@ -70,13 +75,14 @@ work_dir
        └─Skin
              Skin_BRAF_subnetwork_member_genes.txt  # the genes of subnetwork members for each iteration
              Skin_BRAF_subnetwork_argument.txt  # the parameter data calculated by the model for each iteration
+All_tissue_specific_subnetworks_in_tissue.txt  # all tissue-specific subnetworks identified by OncoNiche
 ```
 ### 3. How to run
 Run command:
 ```
 python simulated_annealing_pipeline.py --tissue tissue_type --work_dir work_dir
 ```
-In the OncoNiche_output/tissue directory, you can find the files "Tissue gene subnetwork member genes.txt", "Tissue gene subnetwork argument.txt" and "All_tissue_specific_subnetworks_in_tissue.txt", which contain the subnetwork member genes, the parameter data calculated by the model during each iteration and all tissue-specific subnetworks identified by OncoNiche in this tissue.
+In the OncoNiche_output/tissue directory, you can find the files "Tissue_gene_subnetwork_member_genes.txt", "Tissue_gene_subnetwork_argument.txt" and "All_tissue_specific_subnetworks_in_tissue.txt", which contain the subnetwork member genes, the parameter data calculated by the model during each iteration and all tissue-specific subnetworks identified by OncoNiche in this tissue.
 # Copyright
 Copyright (c) Mulinlab@Tianjin Medical University 2021-2024.
 # Citation
