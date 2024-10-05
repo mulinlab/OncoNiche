@@ -75,7 +75,7 @@ work_dir
        └─Skin
              Skin_BRAF_subnetwork_member_genes.txt  # the genes of subnetwork members for each iteration
              Skin_BRAF_subnetwork_argument.txt  # the parameter data calculated by the model for each iteration
-         All_tissue_specific_subnetworks_in_tissue.txt  # all tissue-specific subnetworks identified by OncoNiche
+            All_tissue_specific_subnetworks_in_tissue.txt  # all tissue-specific subnetworks identified by OncoNiche
 ```
 ### 3. How to run
 Run command:
