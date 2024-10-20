@@ -1,7 +1,7 @@
 # OncoNiche
 ![image](https://github.com/mulinlab/OncoNiche/blob/main/OncoNiche_pipeline/img/OncoNiche.png)
 The OncoNiche model identifies contextual information associated with tissue-specific mutated genes. Initially, using the uKIN method, OncoNiche performs guided random walks and heat diffusion in a network propagation framework to detect cancer-risk genes influenced by these mutations, identifying these as cancer-related subnetworks. The connectivity of each subnetwork is quantified through conductance scores. By applying simulated annealing, OncoNiche identifies the subnetwork with the optimal global conductance score. At each iteration of the annealing process, we ensured significant enrichment of tissue-specific mutated and expressed genes within the refined subnetworks. Ultimately, OncoNiche identifies subnetworks closely connected with each tissue-specific mutated gene, which likely reflect the tissue context associated with each tissue-specific mutations.
-## uKIN method
+## Identifying cancer-related subnetworks (uKIN method)
 ### 1. Input
 There are three required input files:
 1) a background network file 
@@ -31,7 +31,7 @@ Run command:
 python uKIN_pipeline.py --tissue tissue_type --work_dir work_dir
 ```
 In uKIN_pipeline/output folder, you can find the uKIN_seed_SIA_CGC_tissue folder, which contains the candidate genes and visit frequencies associated with all tissue-specific mutated genes for the input tissue type.
-## Simulated annealing
+## Identification of densely connected subnetworks (simulated annealing)
 ### 1. Input
 There are three required input files:
  1) a background network file 
