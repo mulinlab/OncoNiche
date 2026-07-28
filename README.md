@@ -3,6 +3,7 @@ OncoNiche is an integrated network-based framework designed to link tissue-speci
 For each TSMG, OncoNiche executes a two-step inference procedure:
 1) Candidate subnetwork generation. OncoNiche employs the uKIN algorithm, which combines guided random walks with heat diffusion in a network propagation framework, to identify cancer-relevant genes influenced by the driver gene through information flow across the PPI network. Prior cancer gene annotations are obtained from the COSMIC Cancer Gene Census, and the underlying PPI network is derived from the Nested Systems in Tumors (NeST) map.
 2) Subnetwork refinement. A simulated annealing optimization is then applied to the candidate space to recover densely connected subnetworks enriched for tissue-specific mutations and tissue-specifically expressed genes (TSEGs).
+
 This design enables OncoNiche to infer the local molecular niche in which a given driver mutation may confer a selective advantage, providing a systematic view of how tissue context shapes cancer dependency.
 ![image](https://github.com/mulinlab/OncoNiche/blob/main/OncoNiche_pipeline/img/OncoNiche.png)
 ## Identifying cancer-related subnetworks (uKIN method)
